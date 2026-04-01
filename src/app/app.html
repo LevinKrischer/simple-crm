@@ -2,9 +2,12 @@
   <mat-drawer #drawer mode="side" [opened]="true">
     <app-sidenav />
   </mat-drawer>
-  <mat-drawer-content>
-    <app-toolbar (menuClick)="drawer.toggle()" />
 
+  <mat-drawer-content class="app-content">
+    <app-toolbar class="app-toolbar" (menuClick)="drawer.toggle()" />
+
+    <main class="app-main">
+      <router-outlet></router-outlet>
+    </main>
   </mat-drawer-content>
 </mat-drawer-container>
-<router-outlet />
