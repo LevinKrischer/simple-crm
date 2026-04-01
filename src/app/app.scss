@@ -1,0 +1,10 @@
+.app-container {
+  height: 100dvh;
+
+  mat-drawer {
+    --mat-sidenav-container-width: 15rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+  }
+}
